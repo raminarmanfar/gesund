@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/nav_graph"
+	app:startDestination="@id/home">
+
+	<fragment
+		android:id="@+id/home"
+		android:name="com.ramin.armanfar.gesund.Home"
+		android:label="Health"
+		tools:layout="@layout/home_fragment">
+		<action
+			android:id="@+id/action_home_to_caloriesList"
+			app:destination="@id/caloriesList"
+			app:enterAnim="@anim/slide_fragment_enter"
+			app:exitAnim="@anim/slide_fragment_exit"
+			app:popEnterAnim="@anim/slide_pop_enter"
+			app:popExitAnim="@anim/slide_pop_exit"
+			app:popUpTo="@layout/home_fragment"
+			app:popUpToInclusive="true" />
+		<action
+			android:id="@+id/action_home_to_foodsRecipes"
+			app:destination="@id/foodsRecipes"
+			app:enterAnim="@anim/slide_fragment_enter"
+			app:exitAnim="@anim/slide_fragment_exit"
+			app:popEnterAnim="@anim/slide_pop_enter"
+			app:popExitAnim="@anim/slide_pop_exit" />
+		<action
+			android:id="@+id/action_home_to_myDiets"
+			app:destination="@id/myDiets"
+			app:enterAnim="@anim/slide_fragment_enter"
+			app:exitAnim="@anim/slide_fragment_exit"
+			app:popEnterAnim="@anim/slide_pop_enter"
+			app:popExitAnim="@anim/slide_pop_exit" />
+		<action
+			android:id="@+id/action_home_to_settings"
+			app:destination="@id/settings"
+			app:enterAnim="@anim/slide_fragment_enter"
+			app:exitAnim="@anim/slide_fragment_exit"
+			app:popEnterAnim="@anim/slide_pop_enter"
+			app:popExitAnim="@anim/slide_pop_exit" />
+		<action
+			android:id="@+id/action_home_to_aboutMe"
+			app:destination="@id/aboutMe"
+			app:enterAnim="@anim/slide_fragment_enter"
+			app:exitAnim="@anim/slide_fragment_exit"
+			app:popEnterAnim="@anim/slide_pop_enter"
+			app:popExitAnim="@anim/slide_pop_exit" />
+	</fragment>
+	<fragment
+		android:id="@+id/caloriesList"
+		android:name="com.ramin.armanfar.gesund.CaloriesList"
+		android:label="Calories List"
+		tools:layout="@layout/calories_list_fragment" />
+	<fragment
+		android:id="@+id/foodsRecipes"
+		android:name="com.ramin.armanfar.gesund.FoodsRecipes"
+		android:label="Foods Recipes"
+		tools:layout="@layout/foods_recipes_fragment" />
+	<fragment
+		android:id="@+id/myDiets"
+		android:name="com.ramin.armanfar.gesund.MyDiets"
+		android:label="My Diets"
+		tools:layout="@layout/my_diets_fragment" />
+	<fragment
+		android:id="@+id/aboutMe"
+		android:name="com.ramin.armanfar.gesund.AboutMe"
+		android:label="About Me"
+		tools:layout="@layout/about_me_fragment" />
+	<fragment
+		android:id="@+id/settings"
+		android:name="com.ramin.armanfar.gesund.Settings"
+		android:label="Settings"
+		tools:layout="@layout/settings_fragment" />
+</navigation>

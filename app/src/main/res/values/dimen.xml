@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="large_btn_icon_size">60dp</dimen>
+<dimen name="large_btn_margin_top">5dp</dimen>
+<dimen name="large_btn_icon_padding">5dp</dimen>
+<dimen name="large_btn_radius">15dp</dimen>
+	<dimen name="large_btn_text_size">20dp</dimen>
+</resources>
